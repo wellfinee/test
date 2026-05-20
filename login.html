@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Base -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Primary SEO -->
+  <title>Название вкладки</title>
+  <meta name="description" content="описание">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="http://127.0.0.1:5500">
+
+  <!-- Referrer policy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Open Graph (Facebook / Telegram / Discord / VK) -->
+  <meta property="og:locale" content="ru_RU"> <!-- e.g. ru_RU -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Localhost">
+  <meta property="og:title" content="Название ссылки">
+  <meta property="og:description" content="Описание">
+  <meta property="og:url" content="http://127.0.0.1:5500/login.html">
+  <meta property="og:image" content="./img/logo01.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TW_TITLE}}">
+  <meta name="twitter:description" content="{{TW_DESCRIPTION}}">
+  <meta name="twitter:image" content="Ссылку на картинку">
+  <meta name="twitter:image:alt" content="Описание">
+
+  <!-- Theme / Mobile UI -->
+  <meta name="theme-color" content="#FFF">
+
+  <!-- Icons -->
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Apple PWA-ish -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="{{SITE_SHORT_NAME}}">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Preconnect (по ситуации, если реально используешь) -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <input type="text" name="login" placeholder="Введите логин">
+  <input type="password" name="password" placeholder="Введите пароль">
+  <button type="button" class="button" onclick="loginFunc()">Сохранить</button>
+</body>
+<script src="./js/login.js"></script>
+</html>

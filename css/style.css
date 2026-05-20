@@ -1,62 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border-radius: 30px;
+    transition: 0.5s;
 }
-
-body{
-    background-color: #0c0c0c;
-    color: white
+.block:hover{
+    background-color: red;
+    border-radius: 999px;
 }
-
-.container{
-    overflow: hidden;
-    width: 100vw;
-    height: 300vh;
-}
-
-.window{
-    display: flex;
-    will-change: transform;
-    width: 300vw;
-}
-.panel{
-    width: 100vw;
-    height: 100vh;
-    background-color: #1f1f1f;
-    border: 10px solid white;
-}
-/* 
-    padding - отступ внутри элемента 
-    margin - внешний отступ
-
-        можно задать отступы по отдельности:
-            padding-top
-            padding-bottom  
-            padding-left
-            padding-right
-            margin-top
-            margin-bottom
-            margin-left
-            margin-right
-        
-        cокращённая запись отступов:
-            padding: вертикальн. отступ | горизонтал. отступ; два значения
-            padding: верхний отступ | правый отступ | нижний отступ | левый отступ; четыре значения
-
-    контейнер - блочный элемент, который хранит в себе другие элементы
-    родильский элемент - элемент, который содержит в себе другие элементы, тот же самый контейнер
-    дочерний элемент - элемент, который находится внутри другого элемента
-
-    единицы измерения:
-        статичиские:
-            px - пиксели
-            rem - относительная единица измерения, 1rem = 16px (по умолчанию)
-            em - относительная единица измерения, 1em = размер шрифта родительского элемента
-        динамические:
-            % - проценты от родительского элемента
-            vw - проценты от ширины окна браузера (1vw = 1% от ширины окна) - value width
-            vh - проценты от высоты окна браузера (1vh = 1% от высоты окна) - value height
-*/
-
-

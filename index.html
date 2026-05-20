@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+<html lang="ru">
+</head>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="window">
-            <div class="panel">
-                <h1>Panel 1</h1>
-            </div>
-            <div class="panel">
-                <h1 class="anim">Panel 2</h1>
-            </div>
-            <div class="panel">
-                <h1>Panel 4</h1>
-            </div>
-        </div>
-    </div>
-    <a href="tel:mika@gmail.com">mika@gmail.com</a>
+  <div class="block">
+    
+  </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
-<script src="js/script.js"></script>
-</html> 
+<script src="./js/script.js"></script>
+<script src="https://kit.fontawesome.com/8f446d19ac.js" crossorigin="anonymous"></script>
+
+</html>
+
+
+<!-- 
+ul - непронумерованный список
+ol - пронумерованный список
+li - элемент списка
+
+tr - table row - табличная строка
+th - table header - табличный заголовок
+td - table data - табличное данное
+-->
+
+<!-- 
+header - шапка сайта
+main - вся основная часть сайта
+section - одна полноценная часть main
+footer - вся нижняя часть
+nav - навигация - место для ссылок
+aside - боковое меню
+article - статья
+
+-->
+
+
+
+<!-- position - управляет поведением самого блока
+        absolute - элемент перестает взаимодействовать с другими элементами, перестает их видеть
+
+        relative - ведет себя как обычно, но появляются плюсы
+          еслм внутри контейнера с position relative есть элемент с position absolute, то дочерний элемент с absolute перестает
+          игнорировать элемент с relative
+
+          вместо margin-left, margin-right, margin-top, margin-bottom можно использовать top, left, right, bottom
+
+          если элемент перекрываться другим и нам надо его передвинуть по слоям вперед мы должны задать для элемента relative
+
+        fixed - элемент приклеивается на экран
+        static - пока мы ничего не задали у любого элемента стоит position: static
+
+
+-->

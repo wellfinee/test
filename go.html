@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+  if (!localStorage.getItem("isAuth")){
+    location.href = "http://127.0.0.1:5500/login.html"
+  }
+</script>
+<body>
+    <h1>Welcome to My Website, LOGIN ЧЕЛОВЕКА</h1>
+</body>
+</html>
+
+
+<!-- HTML & CSS
+семантика +
+SEO +
+БЭМ +
+position +
+display +
+метатеги + 
+адаптивность
+flexbox +
+
+
+JS
+ВСЁ
+
+React
+   -react
+   -redux-toolkit
+   -react-hook-form
+   -react-query
+   -axios
+
+Django
+ВСЁ + JWT + ЗАЩИТА + УСИЛЕННАЯ РАБОТА С БД -->
+
+
+
+<!-- Семантика - наделение конструкции сайта смыслом, чтобы поисковой робот, мог легко понять по тегам что 
+находится на вашем сайте.
+Чем лучше понимает робот ваш сайт,  тем охотнее и выше он ваш сайт поставит
+
+Семантические теги - тег со смыслом
+
+header - шапка
+main - основная часть
+section - секция сайта
+nav - навигация
+footer - подвал
+article - статья - самостаятельный текст, который является очень важным
+aside - боковое меню
+
+h1-h6
+p
+ul
+li
+ol -->
+
+
+<!-- 
+БЭМ -->
+<!-- 
+.блок__элемент--модификатор
+
+
+.блок - самостоятельный, независимый элемент
+.блок__элемент - зависимый элемент который находится в блоке
+.блок__элемент--модификатор - особый вид зависимого элемента который находится в блоке -->
+
+<!-- 
+Например
+
+<div class="news">
+  <div class="news__cards">
+      <div class="news__card news__card--active"></div>
+      <div class="news__card"></div>
+      <div class="news__card"></div>
+  </div>
+</div> -->
+
+<!-- 
+SEO - search engine optimization
+
+Механизм который помогает выставить сайт выше в GOOGLE 
+
+частями SEO является семантика, метатеги, кросплатферменость и кросбраузерность -->
+
+<!-- 
+<img src="" alt="правильно заполнять!">
+
+<button aria-label="Меню">
+  <img src="humburger.jpg" alt="МЕНЮ">
+</button> -->
+
+<!-- 
+Flexbox (display: flex)
+
+flexbox - достаточно новая технология, для расположения элементов в контейнере
+задается для контейнера, управляет внетренними элементами
+
+flex-direction: - направление главной оси контейнера
+
+главная ось - то  куда выстроены элементы контейнера 
+row - горизонтально
+column - вертикально
+
+поперечная ось - ось которая идет поперек главной оси
+
+
+flex-wrap: - можно ли элементам переходить на новую строку или колонку
+wrap - можно
+nowrap - нельзя
+
+
+
+justify-content - управляет главной осью, всегда
+если главная ось направлена горизонтально, justify-content - управляет горизонталью
+
+  start - слева или сверху
+  center - посередке
+  end - справа или снизу
+  space-between - простраство между элементами будет
+  space-around - пространство вокруг элементов
+  space-evenly - пространство равномерное, вокруг
+
+
+
+
+align-itemn - управляет поперечной осью всегда
+если flex-direction - row, то align-items управляет колонкой
+если наоборот, то наоборот
+
+  start - слева или сверху
+  center - посередке
+  end - справа или снизу
+
+
+
+gap - растояние между элементами
+ -->
+
+
+<header class="header">
+  <h1 class="header__logo">LOGOTYPE</h1>
+  <nav class="header__menu">
+    <ul class="header__links">
+        <li class="header__link-cont">
+          <a href="#" class="header__link"></a>
+        </li>
+        <li class="header__link-cont">
+          <a href="#" class="header__link"></a>
+        </li>
+        <li class="header__link-cont">
+          <a href="#" class="header__link"></a>
+        </li>
+        <li class="header__link-cont">
+          <a href="#" class="header__link"></a>
+        </li>
+        <li class="header__link-cont">
+          <a href="#" class="header__link"></a>
+        </li>
+    </ul>
+  </nav>
+</header>

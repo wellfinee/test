@@ -1,34 +1,78 @@
-gsap.registerPlugin(ScrollTrigger);
+                // Независимое     Зависимое
+// Действие    Функция           Метод
+// Информация  Переменная        Свойство
 
-const windowElement = document.querySelector('.window');
 
-const horisontal = gsap.to(windowElement, {
-  x: -(windowElement.scrollWidth - window.innerWidth),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".container",
-    pin: true,
-    scrub: true,
-    start: "top top",
-    end: () => "+=" + (windowElement.scrollWidth - window.innerWidth),
-    invalidateOnRefresh: true,
-  }
-})
+// alert("Hello World")
+// console.log("Hello World")
 
-gsap.from(".anim", {
-  opacity: 0,
-  y: 50,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".anim",
-    start: "left center",
-    end: "right start",
-    scrub: true,
-    containerAnimation: horisontal,
-  }
-})
+// Переменные:
+//     Изменяемая
+//                 let
+//     Неизменяемая 
+//                 const
+//     Глобальная (устарела - не используется)
+//                 var
 
-window.addEventListener('resize', () => {
-  ScrollTrigger.refresh();
-});
+// тип название = значение
+// const Vasya = 20
+
+// день недели
+// погода
+// Свое имя
+// Любимый напиток
+// дата поступления в школу
+
+// 1. строка
+// const Student_Name = "Vasya"
+// console.log(Student_Name, Student_Name.length)
+
+// 2. число
+// const Student_Age = 20
+// 3. булева переменная 
+// const Student_Granted = true // false
+
+// 1. название переменной должно олицетворять что в ней должно находиться
+// 2. название переменной должно начинаться с буквы
+// 3. в названии переменной могут быть только буквы, цифры, _
+
+
+// const drink = "CocaCola"
+
+// console.log("Vasya", true, 12, "Kia", drink)
+
+
+// alert("Простое уведомление")
+// const answer = prompt("Уведомление с местом для написания ответа")
+// const answer2 = confirm("Уведомление где можно выбрать да или нет")
+// console.log("Имя: ", answer)
+
+
+// // Числа
+// let a = Number(prompt("Enter a"))
+ 
+// a /= b
+
+// console.log(a)
+
+// создать переменную a, b
+// создать переменные для периметра и площади
+// вывести в консоль периметр и площадь
+// увеличить a b вдвое
+// вычислить заново периметр и площадь 
+// вывести в консоль периметр и площадь
+
+// let a = 10
+// let b = "10"
+
+// let c = a + b
+
+// console.log(c)
+
+
+
+// узнать у человека его имя
+// вывести сообщение "Привет {имя}"
+
+let name = prompt("Вася")
+console.log("Привет " + name)
